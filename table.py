@@ -11,7 +11,7 @@ import datetime
 
 
 def fetch_weekly():
-    content = feedparser.parse("https://weekly.tw93.fun/rss.xml")["entries"]
+    content = feedparser.parse("https://www.huchuanwei.com/rss.xml")["entries"]
 
     entries = [
         "* <a href='{url}' target='_blank'>{title}</a> - {published}".format(
@@ -30,5 +30,5 @@ def fetch_weekly():
 print(fetch_weekly())
 
 """
-* <a href='https://weekly.tw93.fun/posts/157-%E5%BC%95%E5%8A%9B%E5%89%A7%E5%9C%BA/' target='_blank'>第157期 - 引力剧场</a> - 2023-12-18
+* <a href='https://www.huchuanwei.com/posts/157-%E5%BC%95%E5%8A%9B%E5%89%A7%E5%9C%BA/' target='_blank'>None</a> - 2023-12-18
 """
